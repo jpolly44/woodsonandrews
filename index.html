@@ -1,116 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Woodson Andrews</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <style>
-    .hero-bg {
-      background-image: url('DavenportSkylineDay2.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodson Andrews | Strategic Consulting &amp; Advisory</title>
+<meta name="description" content="Woodson Andrews delivers strategic consulting, government &amp; defense solutions, and capital advisory for clients across the Midwest and beyond.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 font-sans">
+<body>
 
-  <!-- Hero -->
-  <header class="hero-bg h-screen flex items-center justify-center text-white relative">
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-      <img src="WA-Logo-02_Transparent.png" alt="Woodson Andrews Logo" class="mx-auto h-24 md:h-32 mb-8 drop-shadow-lg">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4">Woodson Andrews</h1>
-      <p class="text-xl md:text-2xl mb-8">Strategic Solutions | Trusted Partnership</p>
-      <a href="#contact" class="inline-block bg-blue-700 hover:bg-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition">
-        Request Information
-      </a>
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Woodson Andrews home">
+      <img class="brand-logo" src="assets/logo-header.png" alt="Woodson Andrews">
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-ghost header-cta">Request Information</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO (parallax) ================= -->
+<section class="hero" id="hero">
+  <div class="hero-layer hero-layer--photo" data-speed="0.25"></div>
+  <div class="hero-layer hero-layer--overlay"></div>
+  <div class="hero-layer hero-layer--grain" data-speed="0.05"></div>
+
+  <div class="hero-content">
+    <h1>Strategic clarity<br>where complex interests converge.</h1>
+    <p class="hero-sub">Woodson Andrews advises government and commercial leaders on decisions that carry real consequences with the judgment to see clearly and the discipline to follow through.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-solid">Request Information</a>
+      <a href="#about" class="btn btn-text">Learn more ↓</a>
     </div>
-  </header>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
 
-  <!-- About -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">About Woodson Andrews</h2>
-          <p class="text-lg text-gray-600 leading-relaxed">
-            Woodson Andrews delivers expert consulting and strategic services in the Quad Cities region and beyond. 
-            With deep roots in the community and a strong connection to Rock Island Arsenal, we provide reliable solutions 
-            for government, defense, and commercial clients.
-          </p>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-copy">
+      <p class="eyebrow">About</p>
+      <h2>Two currents, one direction.</h2>
+      <p>Woodson Andrews is an independent advisory firm built on a simple premise: the best outcomes come from partners who bring judgment, not just credentials.</p>
+      <p>We work alongside government agencies and private clients to navigate strategy, funding, and growth; pairing historic roots in the Midwest with an international field of view. Clients keep us close for the same reasons a good advisor earns trust anywhere: we tell them what they need (not necessarily want) to hear, move at the speed their decisions require, and stay accountable long after an engagement ends.</p>
+    </div>
+    <div class="about-visual" data-speed="0.18">
+      <svg viewBox="0 0 400 500" aria-hidden="true">
+        <path d="M40 40 C 140 140, 180 260, 200 340" fill="none" stroke="#4A4F9E" stroke-width="3" opacity="0.85"/>
+        <path d="M360 40 C 260 140, 220 260, 200 340" fill="none" stroke="#B08D45" stroke-width="3" opacity="0.85"/>
+        <path d="M200 340 L 200 470" fill="none" stroke="#22292F" stroke-width="3" opacity="0.6"/>
+        <circle cx="40" cy="40" r="5" fill="#4A4F9E"/>
+        <circle cx="360" cy="40" r="5" fill="#B08D45"/>
+        <circle cx="200" cy="470" r="5" fill="#22292F"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DIVIDER (parallax) ================= -->
+<div class="divider" data-speed="0.2">
+  <svg viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 20 C 400 120, 800 20, 1600 120" fill="none" stroke="#B08D45" stroke-width="1.5" opacity="0.5"/>
+    <path d="M0 160 C 400 60, 800 160, 1600 60" fill="none" stroke="#F3F1EC" stroke-width="1.5" opacity="0.35"/>
+  </svg>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="services-bg" data-speed="0.1"></div>
+  <div class="services-inner">
+    <p class="eyebrow eyebrow--light">Services</p>
+    <h2>Where we bring the most value.</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M8 30 L8 16 M20 30 L20 8 M32 30 L32 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
         </div>
-        <div>
-          <img src="RockIslandArsenalCannon.jpg" alt="Rock Island Arsenal" class="rounded-2xl shadow-xl w-full">
+        <h3>Strategic Consulting</h3>
+        <p>Guidance for complex projects, organizational change, and growth decisions that carry real consequences.</p>
+      </article>
+      <article class="service-card service-card--photo">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 6 L32 12 L32 22 C32 30 27 34 20 36 C13 34 8 30 8 22 L8 12 Z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/></svg>
         </div>
+        <h3>Government &amp; Defense Solutions</h3>
+        <p>Specialized support for federal and defense-related initiatives, from early strategy through execution.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M20 13 L20 27 M15 17 L25 17 M15 23 L25 23" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Capital &amp; Investment Advisory</h3>
+        <p>Investment strategy and capital partnership support built for long-term outcomes, not just the next transaction.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Request information.</h2>
+      <p>Tell us a little about what you're working on. We respond promptly to every inquiry.</p>
+      <div class="contact-details">
+        <a href="mailto:joe.pollard@woodsonandrews.com">joe.pollard@woodsonandrews.com</a>
+        <a href="tel:+19802852507">+1 (980) 285-2507</a>
       </div>
     </div>
-  </section>
-
-  <!-- Services -->
-  <section class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4 text-blue-900">Strategic Consulting</h3>
-          <p class="text-gray-600">Expert guidance for complex projects and organizational growth.</p>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4 text-blue-900">Government & Defense Solutions</h3>
-          <p class="text-gray-600">Specialized support for federal and defense-related initiatives.</p>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4 text-blue-900">Capital & Investment Advisory</h3>
-          <p class="text-gray-600">Smart financial strategies and investment partnership support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Request Information</h2>
-      <p class="text-center text-gray-600 mb-10">We respond promptly to all inquiries.</p>
-      
-      <form action="https://formsubmit.co/joe.pollard@woodsonandrews.com" method="POST" class="space-y-6">
-        <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" name="name" placeholder="Full Name" required class="w-full px-5 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-600">
-          <input type="email" name="email" placeholder="Email Address" required class="w-full px-5 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-600">
-        </div>
-        <input type="tel" name="phone" placeholder="Phone Number" value="+1.980.285.2507" class="w-full px-5 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-600">
-        
-        <select name="service" class="w-full px-5 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-600">
-          <option value="">Select Service Interest</option>
-          <option value="Strategic Consulting">Strategic Consulting</option>
-          <option value="Government & Defense">Government & Defense Solutions</option>
-          <option value="Capital Advisory">Capital & Investment Advisory</option>
-          <option value="Other">Other Inquiry</option>
+    <form class="contact-form" id="contactForm" action="mailto:joe.pollard@woodsonandrews.com" method="post" enctype="text/plain">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Service Interest
+        <select name="service" required>
+          <option value="" disabled selected>Select service interest</option>
+          <option>Strategic Consulting</option>
+          <option>Government &amp; Defense Solutions</option>
+          <option>Capital &amp; Investment Advisory</option>
+          <option>Other Inquiry</option>
         </select>
-        
-        <textarea name="message" rows="6" placeholder="Tell us more about your needs..." required class="w-full px-5 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-600"></textarea>
-        
-        <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-5 rounded-xl text-lg transition">
-          Submit Request
-        </button>
-      </form>
-    </div>
-  </section>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <button type="submit" class="btn btn-solid">Submit Request</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <img src="WA-Logo-03.png" alt="Woodson Andrews" class="mx-auto h-16 mb-6 opacity-90">
-      <p class="mb-2">Woodson Andrews</p>
-      <p class="mb-6">
-        <a href="mailto:joe.pollard@woodsonandrews.com" class="hover:text-white">joe.pollard@woodsonandrews.com</a> • 
-        <a href="tel:+19802852507" class="hover:text-white">+1 (980) 285-2507</a>
-      </p>
-      <p class="text-sm">© 2026 Woodson Andrews. All Rights Reserved.</p>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#top" class="brand brand--footer" aria-label="Woodson Andrews home">
+      <img class="brand-logo" src="assets/logo-header-light.png" alt="Woodson Andrews">
+    </a>
+    <div class="footer-contact">
+      <a href="mailto:joe.pollard@woodsonandrews.com">joe.pollard@woodsonandrews.com</a>
+      <span aria-hidden="true">•</span>
+      <a href="tel:+19802852507">+1 (980) 285-2507</a>
     </div>
-  </footer>
+    <p class="footer-copy">© 2026 Woodson Andrews. All Rights Reserved.</p>
+  </div>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
